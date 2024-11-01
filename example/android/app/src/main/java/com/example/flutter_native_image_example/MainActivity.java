@@ -1,4 +1,4 @@
-package com.finchinnovate.flutter_native_image_example;
+package com.example.flutternativeimage_example;
 
 import io.flutter.embedding.android.FlutterActivity;
 
