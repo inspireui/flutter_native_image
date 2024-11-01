@@ -1,9 +1,5 @@
-# Archiving this repository
-This has been something that I was keep pushing away from me. One of my more successful projects. But the issues are piling up, the pull requests don't get reviewed, and the truth is that I don't have the time and heart for this project anymore. Flutter was new back then. I had a really cool project with some friends, but in the end, the project didn't make it, and we never needed this library further developed.
-
-So today I decided that I will make this repository an archive and set it to read-only.
-
-If you're willing to take ownership over this repository, feel free to contact me.
+# Updating the repo to make compatable to latest android
+There has been a lot of changes in the android gradle
 
 # flutter_native_image
 [![pub package](https://img.shields.io/pub/v/flutter_native_image.svg?label=flutter_native_image&color=blue)](https://pub.dartlang.org/packages/flutter_native_image)
