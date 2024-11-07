@@ -5,7 +5,7 @@ homepage: https://konseben.dev
 issue_tracker: https://github.com/btastic/flutter_native_image/issues
 
 environment:
-  sdk: ^3.5.2
+  sdk: '>=3.3.0 <4.0.0'
   flutter: '>=3.3.0'
 
 dependencies:
