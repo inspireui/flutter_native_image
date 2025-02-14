@@ -4,21 +4,33 @@ import 'flutter_native_image_method_channel.dart';
 import 'flutter_native_image_platform_interface.dart';
 
 class FlutterNativeImage {
-  Future<File> compressImage(String fileName) {
-    return FlutterNativeImagePlatform.instance.compressImage(fileName);
+  static Future<File> compressImage(
+    String fileName, {
+    int percentage = 70,
+    int quality = 70,
+    int targetWidth = 0,
+    int targetHeight = 0,
+  }) {
+    return FlutterNativeImagePlatform.instance.compressImage(
+      fileName,
+      percentage: percentage,
+      quality: quality,
+      targetWidth: targetWidth,
+      targetHeight: targetHeight,
+    );
   }
 
-  Future<File> cropImage(
+  static Future<File> cropImage(
       String fileName, int originX, int originY, int width, int height) {
     return FlutterNativeImagePlatform.instance
         .cropImage(fileName, originX, originY, width, height);
   }
 
-  Future<ImageProperties> getImageProperties(String fileName) {
+  static Future<ImageProperties> getImageProperties(String fileName) {
     return FlutterNativeImagePlatform.instance.getImageProperties(fileName);
   }
 
-  Future<String?> getPlatformVersion() {
+  static Future<String?> getPlatformVersion() {
     return FlutterNativeImagePlatform.instance.getPlatformVersion();
   }
 }
